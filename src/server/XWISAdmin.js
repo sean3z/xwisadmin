@@ -9,8 +9,8 @@ function XWISAdmin(options) {
     }
 
     this.options = options;
-	this.bans = [];
-	this.channels = {};
+    this.bans = [];
+    this.channels = {};
 
     this.connect();
 }
@@ -26,17 +26,17 @@ XWISAdmin.prototype.connect = function() {
 
     this.socket.on('connect', function() {
         var message = [
-			'CVERS '+ self.options.cvers,
-			'PASS supersecret',
-			'NICK '+ self.options.nick,
-			'apgar '+ self.options.apgar,
-			'SERIAL '+ self.options.serial,
-			'USER UserName HostName irc.westwood.com :RealName',
-			'verchk '+ self.options.verchk,
-			'SETOPT 16,33',
-			'SETCODEPAGE 1252',
-			'SETLOCALE 1'
-		];
+            'CVERS '+ self.options.cvers,
+            'PASS supersecret',
+            'NICK '+ self.options.nick,
+            'apgar '+ self.options.apgar,
+            'SERIAL '+ self.options.serial,
+            'USER UserName HostName irc.westwood.com :RealName',
+            'verchk '+ self.options.verchk,
+            'SETOPT 16,33',
+            'SETCODEPAGE 1252',
+            'SETLOCALE 1'
+        ];
 
         self.send(message.join('\r\n'));
     });
