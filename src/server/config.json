@@ -1,0 +1,38 @@
+{
+    "games": {
+        "ts": {
+            "nick": "botname",
+            "apgar": "password",
+            "serial": "",
+            "cvers": "11012 4608",
+            "verchk": "32512 720908",
+            "lobby": [18],
+            "port": 4001
+        },
+        "ra": {
+            "nick": "botname",
+            "apgar": "password",
+            "serial": "",
+            "cvers": "11015 8464",
+            "verchk": "32528 720911",
+            "lobby": [33, 41],
+            "port": 4002
+        }
+    },
+    "messages": {
+        "CHATBAN_TEMP": [
+            "You have been temporarily chat banned for 15 minutes.",
+            "Once your ban is over, you may need to log in again to resume chat."
+        ],
+        "CHATBAN_PERM": ["You have been permanently chat banned."],
+        "XDROP_TEMP": ["You have been temporarily banned for 1 hour."],
+        "XDROP_PERM": ["You have been banned from XWIS permanently."],
+        "USER_INAPPROPRIATE": ["Do NOT use innappropriate language."],
+        "USER_IMPERSONATION": ["Do NOT impersonate other users."],
+        "USER_LOBBYFLOOD": ["Do NOT flood the lobby."],
+        "ACTION_DEVOICE": ["User devoiced for 15 minutes."],
+        "ACTION_VOICE": ["User regained chat ability."],
+        "ACTION_PERMBAN": ["User added to permanent ban list."],
+        "ACTION_TEMPBAN": ["User temporarily banned for 1 hour."]
+    }
+}

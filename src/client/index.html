@@ -1,0 +1,56 @@
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<div>
+    <h2>XWISAdmin Replacement <small>(XAR)</small></h2>
+</div>
+<hr />
+<div id="container">
+    <div class="sidebar" id="channels">
+        <select class="list" size="30"></select>
+    </div>
+
+	<div id="lobby">
+		<ul class="messages"></ul>
+        <span id="status">Connecting...</span>
+		<input type="text" id="message" disabled="disabled" />
+	</div>
+
+	<div class="sidebar" id="nicklist">
+		<select class="list" size="30"></select>
+        <div id="controls" style="display: none;"></div>
+	</div>
+</div>
+
+<div>
+    <h1>Commands</h1>
+    <table>
+        <tr>
+            <th>Function</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+
+        <tr>
+            <td>/devoice</td>
+            <td>Will chatban (devoice) the supplied user for 15 minutes.</td>
+            <td>/devoice Sean</td>
+        </tr>
+
+        <tr>
+            <td>/voice</td>
+            <td>Will revoice the given user and allow them to chat.</td>
+            <td>/voice Sean</td>
+        </tr>
+
+        <tr>
+            <td>/announce</td>
+            <td>Will send a message to all channels.</td>
+            <td>/announce Prize Invasion coming!</td>
+        </tr>
+    </table>
+</div>
+
+
+<script type="text/javascript" src="app.js"></script>

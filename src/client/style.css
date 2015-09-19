@@ -1,0 +1,89 @@
+body, td, p, div {
+    font: normal 13px "Segoe UI", helvetica, arial, sans-serif;
+    color: #5A5A5A;
+}
+
+#container > div {
+    float: left;
+    margin-right: 2px;
+    height: 100%;
+}
+
+#container > div > * {
+    border-radius: 5px;
+}
+
+.list, .messages {
+    border: 1px solid #ccc;
+    padding: 5px;
+    overflow-y: scroll;
+    height: 330px;
+    display: block;
+    background: #ddd;
+}
+
+.sidebar, .list {
+    min-width: 150px;
+}
+
+#lobby {
+    min-width: 600px;
+}
+
+.messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.messages li {
+    padding: 5px 10px;
+    white-space: pre;
+}
+
+.messages li:nth-child(odd) {
+    background: #eee;
+}
+
+select {
+    width: 107px;
+    height: 20px;
+}
+
+#message {
+    margin-top: 5px;
+    height: 20px;
+    width: 80%;
+    border-radius:2px;
+    border:1px solid #ccc;
+    padding:5px;
+}
+
+#container {
+    min-width: 1000px;
+    height: 370px;
+}
+
+.join {
+    color: #78AB46;
+    font-style: oblique;
+}
+
+.part {
+    color: #990000;
+    font-style: oblique;
+}
+
+.action {
+    font-style: oblique;
+    color: #DA15C8;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #e0e0e0;
+}
