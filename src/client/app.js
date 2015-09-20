@@ -1,4 +1,4 @@
-var socket = io.connect('http://xwis.org:4008');
+var socket = io.connect('http://localhost:4008');
 var channels = {};
 var me = 'xwisadmin';
 
