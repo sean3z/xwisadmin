@@ -29,7 +29,7 @@ socket.on('channels', function(data) {
         switchDestination($('#channels select option:eq(0)').prop('selected', true).val());
     }
 });
-
+ 
 socket.on('part', function(data) {
     part(data.destination, data.originator);
 });
